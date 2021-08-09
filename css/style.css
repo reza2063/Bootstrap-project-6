@@ -1,0 +1,514 @@
+
+/*============
+comon desing
+===============================*/
+.p_style{
+    color: #e2e6ea;
+    text-transform: uppercase;
+    font-size: medium;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+.h2_style{
+    color: #d7d7d7;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    font-style: normal;
+    word-spacing: normal;
+    line-height: normal;
+    margin-bottom: 0;	
+}
+
+.btn_style{
+    text-align: center;
+    width:40%;
+    margin:10px auto;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: arial;
+    padding: 8px 0;
+	transition:0.4s!important;
+	text-transform:uppercase;
+}
+
+/*============
+Nav bar area
+===============================*/
+#header{
+	padding:0.1em 0;
+	background:rgba(0, 107, 255, 0.67);
+}
+
+.navbar .navbar-brand{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: oswald;
+    text-shadow: 0px 0px 5px #09f2a6;
+}
+
+.navbar-nav .nav-link{
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bold;
+    font-family: oswald;
+	transition:0.3s;
+    place-content: center;
+    display: grid;
+}
+
+.navbar-nav .nav-link:hover{
+    background:rgba(8, 108, 244, 0.82);
+}
+
+.navbar-nav{
+	text-align:center;
+}
+
+.sing_btn{
+	place-self:center;
+}
+
+/*============
+Hero area
+===============================*/
+#hero{
+  background:url(../img/img1.jpg) no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position:relative;
+}
+
+.hero_info{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%)!important;
+	z-index:2;
+}
+
+#hero .hero_info .hero_content input{
+    width: 70%;
+    border: none;
+    padding: 6px;
+    font-size: medium;
+    font-family: arial;
+}
+
+#hero .hero_info .hero_content input:focus-visible{
+    outline:none;
+}
+
+#hero .hero_info .hero_content .boat_btn{
+    width: 30%;
+    background: #ec2f55f0;
+    color: white;
+    text-transform: uppercase;
+    font-size: initial;
+    font-family: arial;
+    font-weight: bold;
+	transition:0.3s;
+}
+
+#hero .hero_info .hero_content .boat_btn:hover{
+    background:#ff0033f0;
+}
+
+#hero #facts{
+    position: absolute;
+    bottom:-30px;
+	left: 30px;
+    width:94%;
+    background: white;
+    box-shadow: 0 5px 10px 1px #625e5e9c;
+}
+
+#hero #facts .count-box {
+    display: grid;
+    justify-content: center;
+    font-size: medium;
+    font-weight: bold;
+    font-family: oswald;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*============
+destination area
+===============================*/
+#destination_area{
+	padding-top:6em;
+	padding-bottom:4em;
+}
+
+.destination_heading{
+	padding-bottom:3em;
+}
+
+.destination_heading h2{
+	color:#5a5f64;
+	word-spacing: 0;
+    letter-spacing: 0;
+
+}
+
+.boat_img{
+	position:relative;
+}
+
+.kbd{
+	position:absolute;
+	top:10px;
+	left:10px;
+	opacity:0;
+	transition:0.6s;
+}
+
+kbd{
+    padding: 5px 10px;
+}
+
+.our_zone{
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	opacity:0;
+	transition:0.6s;
+    width: 95%;
+    padding: 10px;
+}
+
+.our_zone h5{
+    color: #e4ecf2;
+    font-family: oswald;
+    margin-bottom: 0;
+}
+
+.our_zone h6{
+    color: #e4ecf2;
+    font-family: oswald;
+}
+
+#destination_area .destination_location .boat_img:hover .kbd{
+	opacity:1;
+}
+
+#destination_area .destination_location .boat_img:hover .our_zone{
+	opacity:1;
+    background: rgba(5, 13, 24, 0.7);
+}
+
+#destination_area .btn_style:hover{
+    background: rgba(5, 13, 24, 0.4)!important;
+}
+
+
+/*============
+own boat area
+===============================*/
+#own_boat_area{
+  background:url(../img/img7.jpg) no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position:relative;
+}
+
+#own_boat_area::before {
+    content: "";
+    background: rgba(5, 13, 24, .5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.hero_content h2{
+	color:#fff;
+}
+
+.hero_content .btn_style{
+	width:50%;
+	background:#e6113bf0;
+	color:#fff;
+	font-size:14px;
+	
+}
+
+.hero_content .btn_style:hover{
+	background:#ff1241;
+	
+}
+
+
+/*============
+featured area
+===============================*/
+#featured_area{
+	padding:4em 0;
+}
+
+.featured_info .kbd{
+    opacity: 1;
+    font-size: medium;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.featured_info .boat_img{
+   overflow:hidden;
+}
+
+.featured_info img{
+    transition:0.4s;
+}
+
+.featured_info img:hover{
+    transform:scale(1.1);
+}
+
+.featured_info .our_zone{
+    opacity:1;
+	background: rgba(5, 13, 24, 0.3);
+}
+
+
+.featured_content .btn_style:hover{
+	background:#1779db!important;
+	color:#fff;
+}
+
+/*============
+# Footer
+===============================*/
+
+#footer {
+  background: #000;
+}
+
+#footer .footer-top {
+  padding: 60px 0;
+}
+
+.footer-contact, .footer-links, .footer-newsletter{
+  padding-bottom:2em;
+}
+
+#footer h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color:#d2d8dd;
+  padding-bottom: 12px;
+  text-transform:uppercase;
+}
+
+#footer .footer-top p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #777777;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+#footer .footer-top .footer-links ul li {
+  padding:8px 5px;
+  display: flex;
+  align-items: center;
+  cursor:pointer;
+  transition:0.4s
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: sans-serif;
+  text-transform:capitalize;
+}
+
+#footer .footer-top .footer-links ul li:hover {
+   background:#221f1f;
+
+}
+
+#footer .footer-top .footer-links ul li:hover a{
+   color:#9d9d9d;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  text-align: left;
+  border: 1px solid #e0e5e2;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="email"]:focus-visible {
+  outline:none;
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 0;
+  font-size: 16px;
+  padding: 0 20px 2px 20px;
+  background: #5fcf80;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background: #3ac162;
+}
+
+.social_area{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 1em;
+}
+
+.social_area .icons .icon_style{
+    text-decoration: none;
+    font-size: larger;
+    background: #404040bf;
+    border-radius: 20px;
+    text-align: center;
+    width:38px;
+    height:38px;
+    display: inline-grid;
+    place-items: center;
+    color: #fff;
+	transition:.3s;
+}
+
+.social_area .icons .icon_style:hover{
+    background:#0ff29d8a;
+	color:#e3d4d4;
+}
+
+
+
+
+
+/*============
+for responsive
+===============================*/
+
+
+/*===============================
+ X-Small devices (portrait phones, less than 576px)
+=======================================*/
+
+
+
+@media (max-width: 575px) { 
+#hero .hero_info .hero_content input{
+	width:100%;
+}
+
+#hero .hero_info .hero_content .boat_btn{
+	width:80%;
+	margin-top:10px;
+}
+
+#hero #facts{
+	left:10px;
+}
+
+.btn_style{
+	width:90%;
+}
+
+.hero_content .btn_style{
+	width:100%;
+}
+
+
+}
+
+
+
+
+/*=================================
+Small devices (landscape phones, less than 768px)
+=======================================*/
+
+@media ( min-width: 576px ) and (max-width: 767px ){
+#hero .hero_info .hero_content input{
+	width:100%;
+}
+
+#hero .hero_info .hero_content .boat_btn{
+	width:50%;
+	margin-top:10px;
+}
+
+
+.btn_style{
+	width:65%;
+}
+
+.hero_content .btn_style{
+	width:70%;
+}
+
+
+
+}
+
+/*=================================
+Large devices (desktops, less than 1200px)
+=======================================*/
+
+@media ( min-width: 993px) and (max-width: 1199px) { 
+#hero #facts{
+	width:94%;
+}
+
+}
+
+
+
+
+
+
+
