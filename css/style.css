@@ -1,7 +1,6 @@
-
-/*============
+/*===
 comon desing
-===============================*/
+=================*/
 .p_style{
     color: #e2e6ea;
     text-transform: uppercase;
@@ -39,9 +38,9 @@ comon desing
 	text-transform:uppercase;
 }
 
-/*============
+/*==
 Nav bar area
-===============================*/
+==============*/
 #header{
 	padding:0.1em 0;
 	background:rgba(0, 107, 255, 0.67);
@@ -77,11 +76,11 @@ Nav bar area
 	place-self:center;
 }
 
-/*============
+/*===
 Hero area
-===============================*/
+=============*/
 #hero{
-  background:url(../img/img1.jpg) no-repeat;
+  background:url(../img/img10.jpg) no-repeat;
   background-position: top;
   width: 100%;
   height: 100vh;
@@ -143,9 +142,9 @@ Hero area
     text-align: center;
 }
 
-/*============
+/*====
 destination area
-===============================*/
+===================*/
 #destination_area{
 	padding-top:6em;
 	padding-bottom:4em;
@@ -159,7 +158,6 @@ destination area
 	color:#5a5f64;
 	word-spacing: 0;
     letter-spacing: 0;
-
 }
 
 .boat_img{
@@ -212,10 +210,9 @@ kbd{
     background: rgba(5, 13, 24, 0.4)!important;
 }
 
-
-/*============
+/*==
 own boat area
-===============================*/
+================*/
 #own_boat_area{
   background:url(../img/img7.jpg) no-repeat;
   background-position: top;
@@ -244,8 +241,7 @@ own boat area
 	width:50%;
 	background:#e6113bf0;
 	color:#fff;
-	font-size:14px;
-	
+	font-size:14px;	
 }
 
 .hero_content .btn_style:hover{
@@ -253,10 +249,9 @@ own boat area
 	
 }
 
-
-/*============
+/*===
 featured area
-===============================*/
+===============*/
 #featured_area{
 	padding:4em 0;
 }
@@ -286,16 +281,14 @@ featured area
 	background: rgba(5, 13, 24, 0.3);
 }
 
-
 .featured_content .btn_style:hover{
 	background:#1779db!important;
 	color:#fff;
 }
 
-/*============
+/*==
 # Footer
-===============================*/
-
+===========*/
 #footer {
   background: #000;
 }
@@ -320,7 +313,7 @@ featured area
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family:sans-serif;
   color: #777777;
 }
 
@@ -329,7 +322,6 @@ featured area
   padding: 0;
   margin: 0;
 }
-
 
 #footer .footer-top .footer-links ul li {
   padding:8px 5px;
@@ -408,12 +400,12 @@ featured area
 
 .social_area .icons .icon_style{
     text-decoration: none;
-    font-size: larger;
+    font-size:medium;
     background: #404040bf;
-    border-radius: 20px;
+    border-radius:20px;
     text-align: center;
-    width:38px;
-    height:38px;
+    width:35px;
+    height:36px;
     display: inline-grid;
     place-items: center;
     color: #fff;
@@ -425,22 +417,22 @@ featured area
 	color:#e3d4d4;
 }
 
-
-
-
-
-/*============
+/*========
 for responsive
-===============================*/
-
+==================*/
 
 /*===============================
  X-Small devices (portrait phones, less than 576px)
 =======================================*/
-
-
-
 @media (max-width: 575px) { 
+#destination_area{
+	padding-top:10em;
+}
+
+#hero #facts{
+	bottom:-90px;
+}
+
 #hero .hero_info .hero_content input{
 	width:100%;
 }
@@ -462,15 +454,11 @@ for responsive
 	width:100%;
 }
 
-
 }
 
-
-
-
-/*=================================
+/*======================
 Small devices (landscape phones, less than 768px)
-=======================================*/
+======================================================*/
 
 @media ( min-width: 576px ) and (max-width: 767px ){
 #hero .hero_info .hero_content input{
@@ -482,7 +470,6 @@ Small devices (landscape phones, less than 768px)
 	margin-top:10px;
 }
 
-
 .btn_style{
 	width:65%;
 }
@@ -491,14 +478,11 @@ Small devices (landscape phones, less than 768px)
 	width:70%;
 }
 
-
-
 }
 
-/*=================================
+/*=======================
 Large devices (desktops, less than 1200px)
-=======================================*/
-
+==============================================*/
 @media ( min-width: 993px) and (max-width: 1199px) { 
 #hero #facts{
 	width:94%;
@@ -506,9 +490,9 @@ Large devices (desktops, less than 1200px)
 
 }
 
+@media (min-width: 1200px) { 
+.featured_info .boat_img {
+    width: max-content;
+}
 
-
-
-
-
-
+}
